@@ -3,11 +3,11 @@ import './style.css'
 
 
 document.querySelector('#app').innerHTML = `
- <section id="start" style="display: flex; flex-direction: row;">
+ <section id="start" class="start-section">
     <div>
-        <img src="imagen1.png">
+        <img src="marieFactieimg.png" alt="Marie Factie image">
     </div>
-    <div style="display: flex; flex-direction: column; ">
+    <div class="column">
         <p>
             Explora hechos interesantes sobre el mundo, la ciencia, la historia y mucho más con solo un clic.
         </p>
@@ -15,51 +15,43 @@ document.querySelector('#app').innerHTML = `
         <button id="buttonStart">Play</button>
     </div>
 </section>
-<section id="newFact" style="display: flex; flex-direction: row;"> 
-    <div style="display: flex; flex-direction: column ">
+<section id="newFact" class="new-fact-section"> 
+    <div class="column">
          <div>
             <!--  POPUP --->
          </div>
-         <div style="display: flex; height: 76px; width: 211px; background-color: #DDE35F; align-items: center; justify-content: center;">
+         <div class="fact-box">
             <p id="dataCountries">Dato Curioso</p>
          </div>
-         <div style="display: flex; flex-direction: row;">
+         <div class="button-row">
             <button> add to Favorites</button>
             <button> Favorites</button>
             <button id="buttonRefresh"> 🔁</button>
          </div>
     </div>
     <div>
-        <img src="imagen2.png">
+        <img src="marieFactieimg2.png" alt="Marie Factie image 2">
     </div>
 </section>
-<section id="favorites" style="display: flex; flex-direction: column ;">
-    <div id="list-favorites" style="display: flex; flex-direction: row; gap: 20px">
-        <div style="display: flex; height: 200px; width: 76px; background-color: #DDE35F; align-items: center; justify-content: center;">
-            Dato Curioso
-        </div>
-          <div style="display: flex; height: 200px; width: 76px; background-color: #DDE35F; align-items: center; justify-content: center;">
-            Dato Curioso
-        </div>  <div style="display: flex; height: 200px; width: 76px; background-color: #DDE35F; align-items: center; justify-content: center;">
-            Dato Curioso
-        </div>  <div style="display: flex; height: 200px; width: 76px; background-color: #DDE35F; align-items: center; justify-content: center;">
-            Dato Curioso
-        </div>  <div style="display: flex; height: 200px; width: 76px; background-color: #DDE35F; align-items: center; justify-content: center;">
-            Dato Curioso
-        </div>
+<section id="favorites" class="favorites-section">
+    <div id="list-favorites" class="favorites-list">
+        <div class="favorite-item">Dato Curioso</div>
+        <div class="favorite-item">Dato Curioso</div>
+        <div class="favorite-item">Dato Curioso</div>
+        <div class="favorite-item">Dato Curioso</div>
+        <div class="favorite-item">Dato Curioso</div>
     </div>
     <div>
         <div>
-            <img src="imagen3.png">
+            <img src="imagen3.png" alt="Image 3">
         </div>
-        <div style="display: flex; flex-direction: column; ">
-            <div style="display: flex; height: 76px; width: 211px; background-color: DDE35F; align-items: center;">
+        <div class="column">
+            <div class="fact-box">
                 <p id="dataCountries">Dato Curioso</p>
              </div> 
-            <button >Play again</button>
+            <button>Play again</button>
         </div>
     </div>
-
 </section>
 `
 

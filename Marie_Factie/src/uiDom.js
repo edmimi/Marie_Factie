@@ -8,3 +8,4 @@ export async function PlayGame() {
     document.getElementById('dataCountries').innerHTML = fact.text;
     
 }
+ 
