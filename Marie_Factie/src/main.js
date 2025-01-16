@@ -1,24 +1,65 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import './style.css' 
+
+
 
 document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+ <section id="start" style="display: flex; flex-direction: row;">
+    <div>
+        <img src="imagen1.png">
     </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
+    <div style="display: flex; flex-direction: column; ">
+        <p>
+            Explora hechos interesantes sobre el mundo, la ciencia, la historia y mucho más con solo un clic.
+        </p>
+        <p>Guarda tus favoritos para volver a ellos cuando quieras.</p>
+        <button id="buttonStart">Play</button>
+    </div>
+</section>
+<section id="newFact" style="display: flex; flex-direction: row;"> 
+    <div style="display: flex; flex-direction: column ">
+         <div>
+            <!--  POPUP --->
+         </div>
+         <div style="display: flex; height: 76px; width: 211px; background-color: #DDE35F; align-items: center; justify-content: center;">
+            <p id="dataCountries">Dato Curioso</p>
+         </div>
+         <div style="display: flex; flex-direction: row;">
+            <button> add to Favorites</button>
+            <button> Favorites</button>
+            <button id="buttonRefresh"> 🔁</button>
+         </div>
+    </div>
+    <div>
+        <img src="imagen2.png">
+    </div>
+</section>
+<section id="favorites" style="display: flex; flex-direction: column ;">
+    <div id="list-favorites" style="display: flex; flex-direction: row; gap: 20px">
+        <div style="display: flex; height: 200px; width: 76px; background-color: #DDE35F; align-items: center; justify-content: center;">
+            Dato Curioso
+        </div>
+          <div style="display: flex; height: 200px; width: 76px; background-color: #DDE35F; align-items: center; justify-content: center;">
+            Dato Curioso
+        </div>  <div style="display: flex; height: 200px; width: 76px; background-color: #DDE35F; align-items: center; justify-content: center;">
+            Dato Curioso
+        </div>  <div style="display: flex; height: 200px; width: 76px; background-color: #DDE35F; align-items: center; justify-content: center;">
+            Dato Curioso
+        </div>  <div style="display: flex; height: 200px; width: 76px; background-color: #DDE35F; align-items: center; justify-content: center;">
+            Dato Curioso
+        </div>
+    </div>
+    <div>
+        <div>
+            <img src="imagen3.png">
+        </div>
+        <div style="display: flex; flex-direction: column; ">
+            <div style="display: flex; height: 76px; width: 211px; background-color: DDE35F; align-items: center;">
+                <p id="dataCountries">Dato Curioso</p>
+             </div> 
+            <button >Play again</button>
+        </div>
+    </div>
+
+</section>
 `
 
-setupCounter(document.querySelector('#counter'))
