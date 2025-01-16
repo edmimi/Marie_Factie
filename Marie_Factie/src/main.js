@@ -15,7 +15,7 @@ document.querySelector('#app').innerHTML = `
         <button id="buttonStart">Play</button>
     </div>
 </section>
-<section id="newFact" class="new-fact-section"> 
+<section id="newFact" class="new-fact-section hidden"> 
     <div class="column">
          <div>
             <!--  POPUP --->
@@ -24,8 +24,8 @@ document.querySelector('#app').innerHTML = `
             <p id="dataCountries">Dato Curioso</p>
          </div>
          <div class="button-row">
-            <button> add to Favorites</button>
-            <button> Favorites</button>
+            <button id="buttonAddToFavorites"> add to Favorites</button>
+            <button id="buttonSeeFavorites"> Favorites</button>
             <button id="buttonRefresh"> 🔁</button>
          </div>
     </div>
@@ -33,7 +33,7 @@ document.querySelector('#app').innerHTML = `
         <img src="marieFactieimg2.png" alt="Marie Factie image 2">
     </div>
 </section>
-<section id="favorites" class="favorites-section">
+<section id="favorites" class="favorites-section hidden">
     <div id="list-favorites" class="favorites-list">
         <div class="favorite-item">Dato Curioso</div>
         <div class="favorite-item">Dato Curioso</div>
@@ -49,7 +49,7 @@ document.querySelector('#app').innerHTML = `
             <div class="fact-box">
                 <p id="dataCountries">Dato Curioso</p>
              </div> 
-            <button>Play again</button>
+            <button id="buttonPlayAgain">Play again</button>
         </div>
     </div>
 </section>
