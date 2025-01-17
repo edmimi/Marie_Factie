@@ -30,7 +30,7 @@ document.querySelector('#app').innerHTML = `
          </div>
     </div>
     <div>
-        <img src="marieFactieimg2.png" alt="Marie Factie image 2">
+        <img src="marieFactieimg2.png" alt="Marie Factie image 2"> 
     </div>
 </section>
 <section id="favorites" class="favorites-section hidden">
