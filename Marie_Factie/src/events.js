@@ -19,7 +19,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  document.getElementById('buttonShowFavorites').addEventListener('click', () => {
-    showFavorites();
-  });
+
 });

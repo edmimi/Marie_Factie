@@ -41,16 +41,8 @@ document.querySelector('#app').innerHTML = `
         <div class="favorite-item">Fun Fact</div>
         <div class="favorite-item">Fun Fact</div>
     </div>
-    <div>
-        <div>
-            <img src="imagen3.png" alt="Image 3">
-        </div>
-        <div class="column">
-            <div class="fact-box">
-                <p id="dataCountries">Dato Curioso</p>
-             </div> 
-            <button id="buttonPlayAgain">Play again</button>
-        </div>
+    <div class="column">
+        <button id="buttonPlayAgain">Play again</button>
     </div>
 </section>
 `
