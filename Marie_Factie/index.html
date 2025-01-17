@@ -1,17 +1,30 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marie Factie</title>
-  </head>
-  <body>
-    <header>
-      <img src="/logo.png" alt="Logo">
-    </header>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-    <script type="module" src="/src/events.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marie Factie</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <header>
+    <img src="/logo.png" alt="Logo">
+  </header>
+
+  <div id="app"></div>
+
+  <!-- Popup testing-->
+   
+   
+  <div id="popup" class="popup" style="display: none;">
+    <div class="popup-content">
+      <span id="closePopup" class="close">&times;</span>
+      <p id="popupMessage"></p>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/events.js"></script>
+</body>
 </html>
