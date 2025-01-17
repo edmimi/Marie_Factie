@@ -181,3 +181,12 @@ p {
 .fact-box {
   z-index: 0;
 }
+
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
