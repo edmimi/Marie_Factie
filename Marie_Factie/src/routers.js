@@ -22,18 +22,6 @@ document.getElementById('buttonSeeFavorites').addEventListener('click', () => {
   });
 });
 
-document.getElementById('buttonAddToFavorites').addEventListener('click', () => {
-  document.querySelectorAll('section').forEach(section => {
-    if (section.id === 'favorites') {
-      section.classList.remove('hidden');
-      section.classList.add('visible');
-    } else {
-      section.classList.remove('visible');
-      section.classList.add('hidden');
-    }
-  });
-});
-
 document.getElementById('buttonPlayAgain').addEventListener('click', () => {
   document.querySelectorAll('section').forEach(section => {
     if (section.id === 'start') {

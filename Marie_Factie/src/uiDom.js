@@ -27,6 +27,12 @@ export function addToFavorites(factText) {
 
   favorites.push(factText);
   setItem('favorites', favorites);
+  
+  let content = "" 
+  favorites.forEach(favorite =>{
+    content+= '<div class="favorite-item">'+ favorite + "</div>"
+  }) 
+  document.getElementById("list-favorites").innerHTML = content
 }
 
 // Obtener favoritos
@@ -57,17 +63,17 @@ export function showFavorites() {
 export function showPopup(message) {
   const popup = document.getElementById("popup");
   const popupMessage = document.getElementById("popupMessage");
-  popupMessage.textContent = message;
+  // popupMessage.textContent = message;
 
-  popup.style.display = "flex";
+  // popup.style.display = "flex";
 
-  document.getElementById("closePopup").addEventListener("click", () => {
-    popup.style.display = "none";
-  });
+  // document.getElementById("closePopup").addEventListener("click", () => {
+  //   popup.style.display = "none";
+  // });
 
-  window.addEventListener("click", (event) => {
-    if (event.target === popup) {
-      popup.style.display = "none";
-    }
-  });
+  // window.addEventListener("click", (event) => {
+  //   if (event.target === popup) {
+  //     popup.style.display = "none";
+  //   }
+  // });
 }
