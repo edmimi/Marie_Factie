@@ -2,9 +2,9 @@ import './style.css'
 import './popupBlock.js'
 
 document.querySelector('#app').innerHTML = `
- <section id="start" class="start-section">
+  <section id="start" class="start-section">
     <div>
-        <img src="marieFactieimg.png" alt="Marie Factie image">
+      <img src="marieFactieimg.png" alt="Marie Factie image">
     </div>
     <div class="column">
         <h1>Explore interesting facts about the world, science, history and much more with just one click.</h1>

@@ -1,18 +1,25 @@
-import { PlayGame } from './uiDom'
+import { PlayGame, addToFavorites, showFavorites } from './uiDom';
 
-document.getElementById('buttonStart').addEventListener('click' , () => {
+document.addEventListener("DOMContentLoaded", () => {
+  let currentFact = null; // Variable para almacenar el dato curioso actual
 
-    PlayGame();
-})
+  document.getElementById('buttonStart').addEventListener('click', async () => {
+    currentFact = await PlayGame();
+  });
 
+  document.getElementById('buttonRefresh').addEventListener('click', async () => {
+    currentFact = await PlayGame();
+  });
 
-document.getElementById('buttonRefresh').addEventListener('click' , () => {
+  document.getElementById('buttonAddToFavorites').addEventListener('click', () => {
+    if (currentFact) {
+      addToFavorites(currentFact);
+    } else {
+      alert("Please get a fact first!");
+    }
+  });
 
-    PlayGame();
-})
-
-//Aqui estaria bien juntar los dos botones asi: 
-//document.getElementById('buttonStart').addEventListener('click' , () => {
-// document.getElementById('buttonRefresh').addEventListener('click' , () => {
-//    PlayGame();
-//})
+  document.getElementById('buttonShowFavorites').addEventListener('click', () => {
+    showFavorites();
+  });
+});
