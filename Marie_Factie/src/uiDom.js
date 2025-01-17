@@ -1,11 +1,73 @@
-import { fetchData } from "./apiService"
+import { fetchData } from "./apiService";
+import { setItem, getItem } from "./localStorage";
 
-
+// Obtiene un dato curioso de la API y lo muestra en pantalla
 export async function PlayGame() {
-
-    const fact = await fetchData();
-   
-    document.getElementById('dataCountries').innerHTML = fact.text;
-    
+  const fact = await fetchData(); // Llama a la API
+  if (fact && fact.text) {
+    document.getElementById('dataCountries').innerText = fact.text;
+    return fact.text; // Devuelve solo el texto del dato curioso
+  }
+  return null;
 }
- 
+
+// Añadir un dato a favoritos (máximo 5)
+export function addToFavorites(factText) {
+  let favorites = getItem('favorites') || []; // Obtener favoritos actuales
+
+  if (favorites.includes(factText)) {
+    showPopup("This fact is already in your favorites!"); // Evita duplicados
+    return;
+  }
+
+  if (favorites.length >= 5) {
+    showPopup("You can only have 5 favorites. Removing the oldest one.");
+    favorites.shift(); // Eliminar el más antiguo
+  }
+
+  favorites.push(factText);
+  setItem('favorites', favorites);
+}
+
+// Obtener favoritos
+export function getFavorites() {
+  return getItem('favorites') || [];
+}
+
+// Mostrar los favoritos en la interfaz
+export function showFavorites() {
+  const favorites = getFavorites();
+  const favoritesList = document.getElementById('favoritesList');
+
+  favoritesList.innerHTML = ""; // Limpiar la lista antes de actualizar
+
+  if (favorites.length === 0) {
+    favoritesList.innerHTML = "<li>No favorites saved yet.</li>";
+    return;
+  }
+
+  favorites.forEach(fact => {
+    const li = document.createElement('li');
+    li.textContent = fact;
+    favoritesList.appendChild(li);
+  });
+}
+
+// Mostrar un mensaje en el popup
+export function showPopup(message) {
+  const popup = document.getElementById("popup");
+  const popupMessage = document.getElementById("popupMessage");
+  popupMessage.textContent = message;
+
+  popup.style.display = "flex";
+
+  document.getElementById("closePopup").addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+
+  window.addEventListener("click", (event) => {
+    if (event.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+}
