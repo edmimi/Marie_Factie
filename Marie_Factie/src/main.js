@@ -1,6 +1,5 @@
 import './style.css' 
-
-
+import './popupBlock.js'
 
 document.querySelector('#app').innerHTML = `
  <section id="start" class="start-section">
@@ -8,20 +7,21 @@ document.querySelector('#app').innerHTML = `
         <img src="marieFactieimg.png" alt="Marie Factie image">
     </div>
     <div class="column">
-        <p>
-            Explora hechos interesantes sobre el mundo, la ciencia, la historia y mucho más con solo un clic.
-        </p>
-        <p>Guarda tus favoritos para volver a ellos cuando quieras.</p>
+        <h1>Explore interesting facts about the world, science, history and much more with just one click.</h1>
+        <h1>Save your favorites to return to them whenever you want.</h1>
         <button id="buttonStart">Play</button>
     </div>
 </section>
 <section id="newFact" class="new-fact-section"> 
     <div class="column">
-         <div>
-            <!--  POPUP --->
-         </div>
+        <div id="overlay"></div>
+        <div class="popupBlock">
+            <h2>You think you're smarter than me?</h2>
+            <img src="/marieFactie_angry.png" alt="Advertencia">
+            <button class="closePopup">X</button>
+        </div>
          <div class="fact-box">
-            <p id="dataCountries">Dato Curioso</p>
+            <p id="dataCountries">Fun Fact</p>
          </div>
          <div class="button-row">
             <button> add to Favorites</button>
@@ -35,22 +35,14 @@ document.querySelector('#app').innerHTML = `
 </section>
 <section id="favorites" class="favorites-section">
     <div id="list-favorites" class="favorites-list">
-        <div class="favorite-item">Dato Curioso</div>
-        <div class="favorite-item">Dato Curioso</div>
-        <div class="favorite-item">Dato Curioso</div>
-        <div class="favorite-item">Dato Curioso</div>
-        <div class="favorite-item">Dato Curioso</div>
+        <div class="favorite-item">Fun Fact</div>
+        <div class="favorite-item">Fun Fact</div>
+        <div class="favorite-item">Fun Fact</div>
+        <div class="favorite-item">Fun Fact</div>
+        <div class="favorite-item">Fun Fact</div>
     </div>
-    <div>
-        <div>
-            <img src="imagen3.png" alt="Image 3">
-        </div>
-        <div class="column">
-            <div class="fact-box">
-                <p id="dataCountries">Dato Curioso</p>
-             </div> 
-            <button>Play again</button>
-        </div>
+    <div class="button-again">
+    <button>Play again</button>
     </div>
 </section>
 `
