@@ -5,11 +5,11 @@ import './popupBlock.js'
 document.querySelector('#app').innerHTML = `
   <header>
     <img src="/logo.svg" alt="Logo" />
-    <audio src="public/assets/audio.mp3" class="audio-player" controls autoplay loop muted></audio>
+    <audio src="/assets/audio.mp3" class="audio-player" controls autoplay loop muted></audio>
   </header>
   <section id="start" class="start-section">
     <div>
-      <img src="public/assets/marieFactieimg.png" alt="Marie Factie image">
+      <img src="/assets/marieFactieimg.png" alt="Marie Factie image">
     </div>
     <div class="column">
         <h1>Explore interesting facts about the world, science, history and much more with just one click.</h1>
@@ -23,7 +23,7 @@ document.querySelector('#app').innerHTML = `
         <div class="popupBlock">
             <div class="popup-content">
                 <h2>You think you're smarter than me?</h2>
-                <img src="public/assets/marieFactie_angry.png" alt="Advertencia">
+                <img src="/assets/marieFactie_angry.png" alt="Advertencia">
                 <button class="closePopup">Yes I am!</button>
             </div>
         </div>
@@ -37,7 +37,7 @@ document.querySelector('#app').innerHTML = `
          </div>
     </div>
     <div>
-        <img src="public/assets/marieFactieimg2.png" alt="Marie Factie image 2"> 
+        <img src="/assets/marieFactieimg2.png" alt="Marie Factie image 2"> 
     </div>
 </section>
 <section id="favorites" class="favorites-section hidden">
@@ -64,27 +64,27 @@ document.querySelector('#app').innerHTML = `
 <section id="aboutUs" class="about-section hidden">
     <div class="team-container">
       <div class="team-member">
-        <img src="public/assets/milena.png" alt="Milena's picture">
+        <img src="/assets/milena.png" alt="Milena's picture">
         <h3>Milena  </h3>
         <p>Product Owner</p>
       </div>
       <div class="team-member">
-        <img src="public/assets/larissa.png" alt="Larissa's picture">
+        <img src="/assets/larissa.png" alt="Larissa's picture">
         <h3>Larissa</h3>
         <p>Coder</p>
       </div>
       <div class="team-member">
-        <img src="public/assets/paola.png" alt="Paola's picture">
+        <img src="/assets/paola.png" alt="Paola's picture">
         <h3>Paola</h3>
         <p>Scrum Master</p>
       </div>
       <div class="team-member">
-        <img src="public/assets/alba.png" alt="Alba's picture">
+        <img src="/assets/alba.png" alt="Alba's picture">
         <h3>Alba</h3>
         <p>Coder</p>
       </div>
       <div class="team-member">
-        <img src="public/assets/miriam.png" alt="Miriam's picture">
+        <img src="/assets/miriam.png" alt="Miriam's picture">
         <h3>Miriam</h3>
         <p>Coder</p>
       </div>
