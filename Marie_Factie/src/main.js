@@ -28,7 +28,7 @@ document.querySelector('#app').innerHTML = `
             </div>
         </div>
          <div class="fact-box">
-            <p id="dataCountries">Fun Fact</p>
+            <p id="fact-content">Fun Fact</p>
          </div>
          <div class="button-row">
             <button id="buttonAddToFavorites"> add to Favorites</button>

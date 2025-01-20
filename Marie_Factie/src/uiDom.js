@@ -5,7 +5,7 @@ import { setItem, getItem } from "./localStorage";
 export async function PlayGame() {
   const fact = await fetchData(); // Llama a la API
   if (fact && fact.text) {
-    document.getElementById('dataCountries').innerText = fact.text;
+    document.getElementById('fact-content').innerText = fact.text;
     return fact.text; // Devuelve solo el texto del dato curioso
   }
   return null;
