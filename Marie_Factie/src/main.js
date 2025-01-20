@@ -27,7 +27,7 @@ document.querySelector('#app').innerHTML = `
          <div class="button-row">
             <button id="buttonAddToFavorites"> add to Favorites</button>
             <button id="buttonSeeFavorites"> Favorites</button>
-            <button id="buttonRefresh"> 🔁</button>
+            <button id="buttonRefresh"> More facts 🔁</button>
          </div>
     </div>
     <div>

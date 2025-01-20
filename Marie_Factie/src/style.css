@@ -39,7 +39,6 @@ header img {
   margin: 10px;
 }
 
-
 body {
   margin: 0;
   display: flex;
@@ -74,12 +73,13 @@ button {
 button:hover {
   border-color: #ff3399;
   background-color: #ff3399;
-
 }
+
 img {
   border: 15px;
-  height: 500px;
-  width: 500px;
+  height: auto;
+  width: 100%;
+  max-width: 500px;
 }
 
 .start-section, .new-fact-section, .favorites-section {
@@ -113,6 +113,7 @@ img {
   border-radius: 20px;
   font-family: 'ADLaM Display', sans-serif;
 }
+
 .favorites-section {
   display: flex;
   flex-direction: column;
@@ -122,6 +123,7 @@ img {
   width: 100%;
   box-sizing: border-box;
 }
+
 .favorites-list {
   display: flex;
   flex-wrap: wrap;
@@ -145,6 +147,7 @@ img {
   margin:20px;
   box-sizing: border-box;
 }
+
 .play-again {
   margin-top: 20px;
   padding: 0.8rem 2rem;
@@ -156,14 +159,14 @@ img {
   cursor: pointer;
 }
 
-h1{
+h1 {
   font-size: 30px;
   color: #dde35f;
   margin-bottom: 1rem;
 }
 
 p {
-  color: #2E4D0E;;
+  color: #2E4D0E;
   margin: 0.5rem 0;
   text-align: center;
 }
@@ -218,13 +221,23 @@ p {
   z-index: 0;
 }
 
-
 .hidden {
   display: none;
 }
 
 .visible {
   display: flex;
+}
+
+.overlay-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 999;
 }
 
 .confirmation-popup {
@@ -247,17 +260,38 @@ p {
 }
 
 @media (max-width: 768px) {
+  header {
+    padding: 0.5rem;
+    justify-content: space-between;
+  }
+
   header img {
-    width: 100%;
-    margin-left: 0.70em;
+    width: 50%;
+    margin-left: 0.5em;
+  }
+
+  .myAudio {
+    width: auto;
+    margin-right: 0.5em;
+  }
+
+  #app {
+    padding: 1rem;
   }
 
   .fact-box {
     width: 90%;
+    height: auto;
+    min-height: 200px;
+    padding: 1rem;
+    font-size: 20px;
   }
 
   .favorite-item {
     width: 90%;
+    height: auto;
+    min-height: 200px;
+    margin: 10px 0;
   }
 
   .start-section, .new-fact-section, .favorites-section {
@@ -268,16 +302,17 @@ p {
   button {
     width: 100%;
   }
+
   button.myAudio {
     margin-right: 2em;
   }
+
   header img {
     width: 40%;
     max-width: 400px;
     height: auto;
     margin-left: 0.70em;
   }
-
 }
 
 @media (min-width: 769px) {

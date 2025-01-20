@@ -40,12 +40,19 @@ export function addToFavorites(factText) {
 
 // Nueva función para mostrar el popup de confirmación
 function showConfirmationPopup() {
+  // Crear y añadir el overlay
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay-blur';
+  document.body.appendChild(overlay);
+
+  // Mostrar el popup
   const confirmationPopup = document.getElementById("confirmationPopup");
   confirmationPopup.classList.remove("hidden");
   
-  // Cerrar el popup al hacer clic en el botón
+  // Cerrar el popup y eliminar el overlay al hacer clic en el botón
   document.getElementById("closeConfirmationPopup").addEventListener("click", () => {
     confirmationPopup.classList.add("hidden");
+    document.body.removeChild(overlay);
   });
 }
 
