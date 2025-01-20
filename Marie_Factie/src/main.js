@@ -21,9 +21,11 @@ document.querySelector('#app').innerHTML = `
     <div class="column">
         <div id="overlay"></div>
         <div class="popupBlock">
-            <h2>You think you're smarter than me?</h2>
-            <img src="/marieFactie_angry.png" alt="Advertencia">
-            <button class="closePopup">X</button>
+            <div class="popup-content">
+                <h2>You think you're smarter than me?</h2>
+                <img src="/marieFactie_angry.png" alt="Advertencia">
+                <button class="closePopup">Yes I am!</button>
+            </div>
         </div>
          <div class="fact-box">
             <p id="dataCountries">Fun Fact</p>

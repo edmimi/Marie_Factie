@@ -12,27 +12,26 @@
 header {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   background-color: #15083e;
   padding: 1rem 0;
 }
 
 header img {
-  width: 40%;
-  max-width: 400px;
+  width: 200px;
   height: auto;
-  margin-left: 1rem;
 }
 
-.myAudio {
-  border-radius: 20px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+.audio-player {
+  width: 200px;
+  border-radius: 100px;
+  border: 15px solid #f1619c;
+  padding: 0;
   font-size: 1em;
   font-weight: 500;
   font-family: 'ADLaM Display', sans-serif;
-  background-color: #f1619c;
+  /* background-color: #f1619c; */
   color:#dde35f;
   cursor: pointer;
   transition: border-color 0.25s, background-color 0.25s;
@@ -97,12 +96,13 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 500px;
 }
 
 .fact-box {
   display: flex;
   height: 300px;
-  width: 850px;
+  width: 500px;
   background-color: #dde35f;
   color: #2E4D0E;
   align-items: center;
@@ -126,8 +126,10 @@ img {
 
 .favorites-list {
   display: flex;
+  /* Show most recent fact first */
+  flex-direction: column-reverse; 
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
   gap: 20px;
   width: 100%;
   margin: 0 auto; 
@@ -135,7 +137,7 @@ img {
 
 .favorite-item {
   display: flex;
-  height: 400px;
+  height: 200px;
   width: 300px;
   background-color: #dde35f;
   align-items: center;
@@ -196,8 +198,14 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000; 
   text-align: center;
-  font-size:40px;
+  font-size:2rem;
   font-family:'ADLaM Display', sans-serif;
+
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .popupBlock button.closePopup {
@@ -210,6 +218,7 @@ p {
   cursor: pointer;
   z-index: 1001;
   font-weight: bold;
+  width: 100%;
 }
 
 .popupBlock button.closePopup:hover {
@@ -259,28 +268,25 @@ p {
   display: none;
 }
 
+/* Small screens */
 @media (max-width: 768px) {
   header {
     padding: 0.5rem;
-    justify-content: space-between;
-  }
-
-  header img {
-    width: 50%;
-    margin-left: 0.5em;
-  }
-
-  .myAudio {
-    width: auto;
-    margin-right: 0.5em;
   }
 
   #app {
     padding: 1rem;
   }
 
+  .audio-player {
+    width: 120px;
+  }
+
+  header img {
+    width: 150px;
+  }
+
   .fact-box {
-    width: 90%;
     height: auto;
     min-height: 200px;
     padding: 1rem;
@@ -288,7 +294,7 @@ p {
   }
 
   .favorite-item {
-    width: 90%;
+    width: 100%;
     height: auto;
     min-height: 200px;
     margin: 10px 0;
@@ -307,25 +313,16 @@ p {
     margin-right: 2em;
   }
 
-  header img {
-    width: 40%;
-    max-width: 400px;
-    height: auto;
-    margin-left: 0.70em;
-  }
-}
+  .popupBlock {
+    left: 0;
+    transform: none;
+    top: 0;
+    height: 86%;
+    margin: 2rem;
 
-@media (min-width: 769px) {
-  .fact-box {
-    width: 850px;
-  }
-
-  .favorite-item {
-    width: 300px;
-  }
-
-  .start-section, .new-fact-section, .favorites-section {
-    flex-direction: row;
+    img {
+      width: 70%;
+    }
   }
 }
 
