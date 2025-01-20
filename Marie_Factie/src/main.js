@@ -1,6 +1,7 @@
 import './style.css' 
 import './popupBlock.js'
 
+
 document.querySelector('#app').innerHTML = `
   <section id="start" class="start-section">
     <div>
