@@ -30,7 +30,7 @@ header img {
   padding: 0;
   font-size: 1em;
   font-weight: 500;
-  font-family: 'ADLaM Display', sans-serif;
+  font-family: 'ADLaM Display', sans-serif;        
   /* background-color: #f1619c; */
   color:#dde35f;
   cursor: pointer;
@@ -369,7 +369,7 @@ p {
 }
 
 .footer-link:hover {
-  color: #f1619c;
+  color: #dde35f;
 }
 
 .footer-text {
@@ -393,12 +393,13 @@ p {
 }
 
 .team-member {
-  width: 100px;
+  width: 160px;
   text-align: center;
   padding: 1rem;
   background-color: #0c0524;
   border-radius: 15px;
   transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
 .team-member:hover {
@@ -406,10 +407,11 @@ p {
 }
 
 .team-member img {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   margin-bottom: 1rem;
+  object-fit: cover;
 }
 
 .team-member h3 {
@@ -421,15 +423,35 @@ p {
   color: #dde35f;
 }
 
-#buttonBackFromAbout {
-  margin-top: 1rem;
+button {
+  border-radius: 20px;
+  border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
+  font-weight: 500;
+  font-family: 'ADLaM Display', sans-serif;
+  background-color: #f1619c;
+  color:#dde35f;
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+  margin: 10px;
+}
+
+#buttonBackFromAbout {
+  margin-top: 20px;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
   background-color: #f1619c;
   color: #dde35f;
   border: none;
-  border-radius: 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  width: auto;
   align-self: center;
+  position: static; /* Elimina el posicionamiento relativo */
+  }
+  
+
+#buttonBackFromAbout:hover {    
+  background-color: #d94b84;
 }
