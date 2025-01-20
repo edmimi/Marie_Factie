@@ -22,9 +22,9 @@ document.getElementById('buttonSeeFavorites').addEventListener('click', () => {
   });
 });
 
-document.getElementById('buttonAddToFavorites').addEventListener('click', () => {
+document.getElementById('buttonPlayAgain').addEventListener('click', () => {
   document.querySelectorAll('section').forEach(section => {
-    if (section.id === 'favorites') {
+    if (section.id === 'start') {
       section.classList.remove('hidden');
       section.classList.add('visible');
     } else {
@@ -34,7 +34,19 @@ document.getElementById('buttonAddToFavorites').addEventListener('click', () => 
   });
 });
 
-document.getElementById('buttonPlayAgain').addEventListener('click', () => {
+document.getElementById('buttonAboutUs').addEventListener('click', () => {
+  document.querySelectorAll('section').forEach(section => {
+    if (section.id === 'aboutUs') {
+      section.classList.remove('hidden');
+      section.classList.add('visible');
+    } else {
+      section.classList.remove('visible');
+      section.classList.add('hidden');
+    }
+  });
+});
+
+document.getElementById('buttonBackFromAbout').addEventListener('click', () => {
   document.querySelectorAll('section').forEach(section => {
     if (section.id === 'start') {
       section.classList.remove('hidden');
