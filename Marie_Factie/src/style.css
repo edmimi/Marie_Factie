@@ -47,6 +47,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: #15083e;
+  padding-bottom: 80px;
 }
 
 #app {
@@ -352,3 +353,88 @@ p {
   }
 }
 
+.footer {
+  width: 100%;
+  padding: 1rem;
+  background-color: #0c0524;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-link {
+  background: none;
+  border: none;
+  color: #dde35f;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  text-decoration: underline;
+}
+
+.footer-link:hover {
+  color: #f1619c;
+}
+
+.footer-text {
+  color: #dde35f;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.about-section {
+  padding: 2rem;
+  text-align: center;
+  flex-direction: column;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.team-member {
+  width: 100px;
+  text-align: center;
+  padding: 1rem;
+  background-color: #0c0524;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.team-member h3 {
+  color: #f1619c;
+  margin: 0.5rem 0;
+}
+
+.team-member p {
+  color: #dde35f;
+}
+
+#buttonBackFromAbout {
+  margin-top: 1rem;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  background-color: #f1619c;
+  color: #dde35f;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}

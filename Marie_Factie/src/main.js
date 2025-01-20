@@ -55,5 +55,35 @@ document.querySelector('#app').innerHTML = `
         </div>
     </div>
 </section>
+<section id="aboutUs" class="about-section hidden">
+    <div class="team-container">
+      <div class="team-member">
+        <img src="milena.png" alt="Milena's picture">
+        <h3>Milena  </h3>
+        <p>Product Owner</p>
+      </div>
+      <div class="team-member">
+        <img src="larissa.png" alt="Larissa's picture">
+        <h3>Larissa</h3>
+        <p>Coder</p>
+      </div>
+      <div class="team-member">
+        <img src="paola.png" alt="Paola's picture">
+        <h3>Paola</h3>
+        <p>Scrum Master</p>
+      </div>
+      <div class="team-member">
+        <img src="alba.png" alt="Alba's picture">
+        <h3>Alba</h3>
+        <p>Coder</p>
+      </div>
+      <div class="team-member">
+        <img src="miriam.png" alt="Miriam's picture">
+        <h3>Miriam</h3>
+        <p>Coder</p>
+      </div>
+    </div>
+    <button id="buttonBackFromAbout" class="play-again">Back to Game</button>
+</section>
 `
 
