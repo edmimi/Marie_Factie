@@ -41,8 +41,8 @@ document.querySelector('#app').innerHTML = `
         <div class="favorite-item">Fun Fact</div>
         <div class="favorite-item">Fun Fact</div>
     </div>
-    <div class="column">
-        <button id="buttonPlayAgain">Play again</button>
+    <div>
+        <button id="buttonPlayAgain" class="play-again">Play again</button>
     </div>
 </section>
 `

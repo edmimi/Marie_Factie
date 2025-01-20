@@ -98,12 +98,22 @@ img {
   border-radius: 20px;
   font-family: 'ADLaM Display', sans-serif;
 }
-
+.favorites-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
 .favorites-list {
   display: flex;
-  flex-direction: row;
-  gap: 50px;
-  
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto; 
 }
 
 .favorite-item {
@@ -118,9 +128,20 @@ img {
   font-weight: bold;
   border-radius: 20px;
   margin:20px;
+  box-sizing: border-box;
+}
+.play-again {
+  margin-top: 20px;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background-color: #f1619c;
+  color: #dde35f;
+  border: none;
+  cursor: pointer;
 }
 
-h1 {
+h1{
   font-size: 30px;
   color: #dde35f;
   margin-bottom: 1rem;
@@ -188,5 +209,5 @@ p {
 }
 
 .visible {
-  display: block;
+  display: flex;
 }
