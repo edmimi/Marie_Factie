@@ -32,7 +32,21 @@ export function addToFavorites(factText) {
   favorites.forEach(favorite =>{
     content+= '<div class="favorite-item">'+ favorite + "</div>"
   }) 
-  document.getElementById("list-favorites").innerHTML = content
+  document.getElementById("list-favorites").innerHTML = content;
+
+  // Mostrar popup de confirmación
+  showConfirmationPopup();
+}
+
+// Nueva función para mostrar el popup de confirmación
+function showConfirmationPopup() {
+  const confirmationPopup = document.getElementById("confirmationPopup");
+  confirmationPopup.classList.remove("hidden");
+  
+  // Cerrar el popup al hacer clic en el botón
+  document.getElementById("closeConfirmationPopup").addEventListener("click", () => {
+    confirmationPopup.classList.add("hidden");
+  });
 }
 
 // Obtener favoritos
