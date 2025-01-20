@@ -127,7 +127,7 @@ img {
 .favorites-list {
   display: flex;
   /* Show most recent fact first */
-  flex-direction: column-reverse; 
+  flex-direction: row-reverse; 
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
