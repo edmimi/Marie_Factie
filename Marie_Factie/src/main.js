@@ -45,5 +45,11 @@ document.querySelector('#app').innerHTML = `
         <button id="buttonPlayAgain" class="play-again">Play again</button>
     </div>
 </section>
+<section id="confirmationPopup" class="confirmation-popup hidden">
+    <div class="popup-content">
+        <h2>Fact added to favorites successfully!</h2>
+        <button id="closeConfirmationPopup">Close</button>
+    </div>
+</section>
 `
 
