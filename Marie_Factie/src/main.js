@@ -3,6 +3,10 @@ import './popupBlock.js'
 
 
 document.querySelector('#app').innerHTML = `
+  <header>
+    <img src="/logo.svg" alt="Logo" />
+    <audio src="/audio.mp3" class="audio-player" controls autoplay loop muted></audio>
+  </header>
   <section id="start" class="start-section">
     <div>
       <img src="marieFactieimg.png" alt="Marie Factie image">
