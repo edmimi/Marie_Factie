@@ -54,8 +54,11 @@ document.querySelector('#app').innerHTML = `
 </section>
 <section id="confirmationPopup" class="confirmation-popup hidden">
     <div class="popup-content">
-        <h2>Fact added to favorites successfully!</h2>
-        <button id="closeConfirmationPopup">Close</button>
+        <h2>This fact is now in your favorites!</h2>
+        <div class="popup-buttons">
+            <button id="closeConfirmationPopup">Close</button>
+            <button id="goToFavorites">See Favorites</button>
+        </div>
     </div>
 </section>
 `

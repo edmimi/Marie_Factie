@@ -49,10 +49,27 @@ function showConfirmationPopup() {
   const confirmationPopup = document.getElementById("confirmationPopup");
   confirmationPopup.classList.remove("hidden");
   
-  // Cerrar el popup y eliminar el overlay al hacer clic en el botón
+  // Cerrar el popup y eliminar el overlay al hacer clic en el botón cerrar
   document.getElementById("closeConfirmationPopup").addEventListener("click", () => {
     confirmationPopup.classList.add("hidden");
     document.body.removeChild(overlay);
+  });
+
+  // Añadir evento para el botón de ver favoritos
+  document.getElementById("goToFavorites").addEventListener("click", () => {
+    confirmationPopup.classList.add("hidden");
+    document.body.removeChild(overlay);
+    
+    // Navegar a la sección de favoritos
+    document.querySelectorAll('section').forEach(section => {
+      if (section.id === 'favorites') {
+        section.classList.remove('hidden');
+        section.classList.add('visible');
+      } else {
+        section.classList.remove('visible');
+        section.classList.add('hidden');
+      }
+    });
   });
 }
 
