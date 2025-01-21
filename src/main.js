@@ -65,8 +65,8 @@ document.querySelector('#app').innerHTML = `
     <div class="team-container">
       <div class="team-member">
         <img src="/assets/milena.png" alt="Milena's picture">
-        <h3>Milena  </h3>
-        <p>Product Owner</p>
+        <h3>Milena</h3>
+        <p>Scrum Master</p>
       </div>
       <div class="team-member">
         <img src="/assets/larissa.png" alt="Larissa's picture">
@@ -76,7 +76,7 @@ document.querySelector('#app').innerHTML = `
       <div class="team-member">
         <img src="/assets/paola.png" alt="Paola's picture">
         <h3>Paola</h3>
-        <p>Scrum Master</p>
+        <p>Product Owner</p>
       </div>
       <div class="team-member">
         <img src="/assets/alba.png" alt="Alba's picture">
