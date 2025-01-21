@@ -65,7 +65,7 @@ document.querySelector('#app').innerHTML = `
     <div class="team-container">
       <div class="team-member">
         <img src="/assets/milena.png" alt="Milena's picture">
-        <h3>Milena</h3>
+        <h3>Milena </h3>
         <p>Scrum Master</p>
       </div>
       <div class="team-member">
