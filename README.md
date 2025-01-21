@@ -1,6 +1,7 @@
 # Marie Factie
 
-![logo](https://github.com/user-attachments/assets/cc416a8f-beb8-4cd7-965d-aa3d25521550)
+
+![marieFactieimg2](https://github.com/user-attachments/assets/1a024ef2-89fc-4925-9046-8c0959324d99)
 
 ## Descripción del Proyecto
 
