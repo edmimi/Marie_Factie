@@ -30,8 +30,7 @@ header img {
   padding: 0;
   font-size: 1em;
   font-weight: 500;
-  font-family: 'ADLaM Display', sans-serif;        
-  /* background-color: #f1619c; */
+  font-family: 'ADLaM Display', sans-serif;       
   color:#dde35f;
   cursor: pointer;
   transition: border-color 0.25s, background-color 0.25s;
@@ -113,6 +112,7 @@ img {
   margin: 1rem 0;
   border-radius: 20px;
   font-family: 'ADLaM Display', sans-serif;
+  padding: 3.5rem;
 }
 
 .favorites-section {
@@ -127,13 +127,13 @@ img {
 
 .favorites-list {
   display: flex;
-  /* Show most recent fact first */
   flex-direction: row-reverse; 
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   width: 100%;
   margin: 0 auto; 
+  align-items: center;
 }
 
 .favorite-item {
@@ -172,6 +172,8 @@ p {
   color: #2E4D0E;
   margin: 0.5rem 0;
   text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 #overlay {
@@ -200,17 +202,17 @@ p {
   z-index: 1000; 
   text-align: center;
   font-family:'ADLaM Display', sans-serif;
-
-  .popup-content {
+}
+.popup-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    h2 {
-      font-size: 2.5rem;
-    }
   }
-}
+
+  h2 {
+      font-size: 2.5rem;
+  }
+
 
 .popupBlock button.closePopup {
   margin-top: 10px;
@@ -291,7 +293,7 @@ p {
     border-color: #c5cb4f;
 }
 
-/* Small screens */
+
 @media (max-width: 768px) {
   header {
     padding: 0.5rem;
@@ -448,8 +450,8 @@ button {
   cursor: pointer;
   width: auto;
   align-self: center;
-  position: static; /* Elimina el posicionamiento relativo */
-  }
+  position: static; 
+}
   
 
 #buttonBackFromAbout:hover {    

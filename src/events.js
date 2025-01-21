@@ -1,7 +1,7 @@
 import { PlayGame, addToFavorites, showFavorites } from './uiDom';
 
 document.addEventListener("DOMContentLoaded", () => {
-  let currentFact = null; // Variable para almacenar el dato curioso actual
+  let currentFact = null; 
 
   document.getElementById('buttonStart').addEventListener('click', async () => {
     currentFact = await PlayGame();
